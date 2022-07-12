@@ -1,0 +1,320 @@
+:root {
+  --canvas-color: #ededed;
+  --bg-color: #ffffff;
+  --bg-color-alt: #ffb265;
+  --font-color: #212529;
+  --primary-color: #ff9f0d;
+  --secondary-color: #0e926b;
+  --hover-color: #d68409;
+  --heading-ff: "Montserrat", sans-serif;
+  --body-ff: "Montserrat", sans-serif;
+  --bottom-box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  --box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--canvas-color) !important;
+  color: var(--font-color) !important;
+  font-family: var(--body-ff);
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-ff);
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+h3 {
+  font-size: 1rem !important;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.myBtn {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.myBtn:hover {
+  background-color: var(--hover-color);
+  color: white !important;
+  transform: scale(1.05) translateY(-0.125em);
+}
+
+.my-container {
+  padding: 1rem;
+}
+.my-container .row {
+  margin: 1rem 0;
+}
+
+#my-navbar {
+  min-height: 10vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--bg-color) !important;
+  box-shadow: var(--bottom-box-shadow);
+}
+
+.navbar-brand {
+  margin-left: 0 !important;
+}
+
+.container-fluid {
+  padding-left: 0;
+}
+
+#logo {
+  max-width: 50px;
+}
+
+#logo:hover {
+  content: url("../img/svgs/logo-hover.svg");
+}
+
+#my-navbar a {
+  font-weight: 600;
+  margin: 0 1rem;
+}
+
+#my-navbar a:hover {
+  color: var(--secondary-color);
+}
+
+.offcanvas.offcanvas-end {
+  padding: 1rem;
+}
+
+.hero {
+  background-color: var(--bg-color);
+  background: linear-gradient(-45deg, #e0e0e0, #ffffff);
+  margin: 20vh 1rem;
+  margin-bottom: 10vh;
+  box-shadow: var(--box-shadow);
+  border-radius: 16px;
+  position: relative;
+}
+
+.hero-img {
+  border-radius: 16px 0 16px;
+  box-shadow: var(--box-shadow);
+}
+
+.about {
+  background-color: #2a261f;
+  background: linear-gradient(45deg, #2a261f, #423f3a);
+  color: white;
+}
+.about h2 {
+  color: var(--secondary-color);
+}
+
+.svg {
+  width: 100px;
+}
+
+.svg-container {
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin: 1rem 0;
+  padding: 2rem;
+  border-radius: 0 40px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.programs {
+  background-color: var(--canvas-color);
+  background: linear-gradient(45deg, #e0e0e0, #ffffff);
+}
+
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  margin: 1rem 0;
+}
+
+.card-img-top {
+  border-radius: 16px 16px 0 0;
+}
+
+.campaigns {
+  background-color: var(--secondary-color);
+  background: linear-gradient(-45deg, #0e926b, #27dca6);
+}
+.campaigns .col-md-6 {
+  text-align: center;
+}
+
+#campaign-img {
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.campaign-content {
+  position: relative;
+}
+
+.campaign-stats {
+  background-color: white;
+  height: auto;
+  padding: 2rem;
+  border-radius: 0 40px;
+  box-shadow: var(--box-shadow);
+}
+.campaign-stats ul {
+  margin-right: 1rem;
+}
+.campaign-stats li {
+  list-style: none;
+  text-align: center;
+}
+
+.campaign-stats li:nth-child(1), .campaign-stats li:nth-child(6) {
+  font-size: 0.75rem;
+}
+
+.campaign-stats li:nth-child(2), .campaign-stats li:nth-child(7) {
+  font-weight: 600;
+}
+
+.campaign-stats li:nth-child(4) {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  background-color: var(--primary-color);
+  background: linear-gradient(-45deg, #ff9f0d, #ffbd7a);
+  background: url("../img/contact-bg-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.contact .row {
+  width: 100%;
+}
+.contact .myBtn {
+  background-color: var(--secondary-color);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--bg-color) !important;
+  box-shadow: var(--box-shadow) !important;
+}
+footer .nav-item {
+  padding: 1rem;
+}
+footer .ms-3 {
+  padding: 0.5rem;
+}
+footer a {
+  color: var(--font-color);
+  font-weight: 600;
+}
+footer a:hover {
+  color: var(--secondary-color);
+}
+footer p {
+  color: var(--font-color);
+  margin-top: 1rem;
+}
+footer p:hover {
+  cursor: default;
+}
+
+@media (min-width: 64em) {
+  .my-container {
+    padding: 5rem 5vw;
+  }
+  .my-container .row {
+    margin: 1rem 0;
+  }
+  .hero {
+    margin: 20vh 5vw;
+  }
+  .svg-container {
+    width: 200px;
+    margin: 1rem;
+  }
+  #campaign-img {
+    max-width: 750px;
+  }
+  .campaign-stats {
+    position: absolute;
+    top: 2rem;
+    right: 5rem;
+  }
+  .contact .row {
+    width: 75%;
+  }
+}
+@media (min-width: 80em) {
+  .svg-container {
+    width: 250px;
+    margin: 1rem;
+  }
+}
+@media (min-width: 85.375em) {
+  .svg-container {
+    width: 250px;
+  }
+}
+@media (min-width: 120em) {
+  .my-container {
+    padding: 5rem 20vw;
+  }
+  .hero {
+    margin: 15vh 20vw;
+    margin-bottom: 5vh;
+  }
+}
+@media (min-width: 160em) {
+  .my-container {
+    padding: 5rem 25vw;
+  }
+  .hero {
+    margin: 15vh 25vw;
+    margin-bottom: 5vh;
+  }
+}
+@media (min-width: 240em) {
+  .my-container {
+    padding: 5rem 35vw;
+  }
+  .hero {
+    margin: 15vh 35vw;
+    margin-bottom: 5vh;
+  }
+}/*# sourceMappingURL=style.css.map */

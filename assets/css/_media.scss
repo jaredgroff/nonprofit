@@ -1,0 +1,85 @@
+// 600px
+@media (min-width: 37.5em) { 
+
+  }
+  
+  // 768px
+  @media (min-width:48em) { 
+
+  }
+  
+  // 1024px
+  @media (min-width: 64em) {
+    .my-container {
+      padding: 5rem 5vw;
+      .row {
+          margin: 1rem 0;
+      }
+  }
+  .hero {
+    margin: 20vh 5vw;
+  }
+  .svg-container {
+    width: 200px;
+    margin: 1rem;
+  }
+    #campaign-img {
+      max-width: 750px;
+  }
+  .campaign-stats {
+    position:absolute; 
+    top:2rem;
+    right:5rem; 
+  }
+  .contact .row {
+    width: 75%;
+  }
+  }
+  
+  // 1280px
+  @media (min-width: 80em) {
+    .svg-container {
+      width: 250px;
+      margin: 1rem;
+    }
+  }
+  
+  // 1366px
+  @media (min-width: 85.375em) {
+    .svg-container {
+      width: 250px;
+    }
+  }
+  
+  // 1920px
+  @media (min-width: 120em) {
+    .my-container {
+        padding: 5rem 20vw;
+    }
+    .hero {
+        margin: 15vh 20vw; 
+        margin-bottom: 5vh;
+    }
+  }
+  
+  // 2560px
+  @media (min-width: 160em) {
+    .my-container {
+        padding: 5rem 25vw;
+    }
+    .hero {
+        margin: 15vh 25vw; 
+        margin-bottom: 5vh;
+    }
+  }
+  
+  // 3840px
+  @media (min-width: 240em) {
+    .my-container {
+        padding: 5rem 35vw;
+    }
+    .hero {
+        margin: 15vh 35vw; 
+        margin-bottom: 5vh;
+    }
+  }

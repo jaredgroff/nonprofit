@@ -1,0 +1,19 @@
+.contact {
+    background-color: var(--primary-color);
+    background: linear-gradient(-45deg, #ff9f0d, #ffbd7a);
+    background: url('../img/contact-bg-2.jpg');
+    background-size: cover;
+    background-position: center;
+
+    .row {
+        width: 100%;
+    }
+    .myBtn {
+        background-color: var(--secondary-color);
+    }
+}
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

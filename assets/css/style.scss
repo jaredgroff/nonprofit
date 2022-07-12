@@ -1,0 +1,70 @@
+@import "./variables";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--canvas-color) !important;
+    color: var(--font-color) !important;
+    font-family: var(--body-ff);
+}
+h1, h2, h3 {
+    font-family: var(--heading-ff);
+}
+h1 {
+    font-weight: 700;
+}
+h2 {
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 1rem !important;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none !important;
+}
+.myBtn {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.myBtn:hover {
+    background-color: var(--hover-color);
+    color: white !important;
+    transform: scale(1.05) translateY(-.125em);
+}
+
+.my-container {
+    padding: 1rem;
+    .row {
+        margin: 1rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import "./navbar";
+@import "./hero";
+@import "./about";
+@import "./programs";
+@import "./campaigns";
+@import "./news";
+@import "./contact";
+@import "./footer";
+@import "./media";

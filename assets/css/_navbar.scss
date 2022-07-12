@@ -1,0 +1,32 @@
+#my-navbar {
+    min-height: 10vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--bg-color) !important;
+    box-shadow: var(--bottom-box-shadow);
+}
+
+.navbar-brand {
+    margin-left: 0 !important
+}
+.container-fluid {
+    padding-left: 0;
+}
+
+#logo {
+    max-width: 50px;
+}
+#logo:hover {
+    content: url('../img/svgs/logo-hover.svg');
+}
+#my-navbar a {
+    font-weight: 600;
+    margin: 0 1rem;
+}
+
+#my-navbar a:hover {
+    color: var(--secondary-color);
+}
+.offcanvas.offcanvas-end {
+    padding: 1rem;
+}

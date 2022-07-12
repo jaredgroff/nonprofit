@@ -1,0 +1,13 @@
+.programs {
+    background-color: var(--canvas-color);
+    background: linear-gradient(45deg, #e0e0e0, #ffffff);
+}
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    margin: 1rem 0;
+}
+.card-img-top {
+    border-radius: 16px 16px 0 0;
+}
