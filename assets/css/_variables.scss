@@ -1,13 +1,24 @@
 :root {
     --canvas-color: #ededed;
-    --bg-color: #ffffff;
+    --bg-color: #f1f1f1;
     --bg-color-alt: #ffb265;
+
     --font-color: #212529;
+    --font-color-light: #f1f1f1;
+
     --primary-color: #ff9f0d;
     --secondary-color: #0e926b;
-    --hover-color: #d68409;
+    --dark-color: #2a261f;
+
+    --link-color: #f1f1f1;;
+    --hover-color: #ff9f0d;
+    --btn-hover-color: #ea910d;
+
     --heading-ff: 'Montserrat', sans-serif;
     --body-ff: 'Montserrat', sans-serif;
+
     --bottom-box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     --box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    --overlay: rgba(0, 0, 0, 0.35);
+    --overlay2: #00000099;
 }

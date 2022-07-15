@@ -17,11 +17,15 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
    </head>
    <body>
+      <header>
+         <a id="skip-nav" class="screenreader-text" href="#about">
+            Skip to Content
+         </a>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg bg-light fixed-top my-container" id="my-navbar">
+      <nav class="navbar navbar-dark navbar-expand-lg fixed-top my-container" id="my-navbar">
          <div class="container-fluid">
             <a class="navbar-brand" href="#">
-            <img id="logo" src="assets/img/svgs/logo.svg">
+            <img id="logo" src="assets/img/svgs/logo.svg" alt="Forever Reader's Logo - Child reading a book"> Forever Readers
             <a href="https://www.vectorstock.com/royalty-free-vector/kid-learning-logo-templatechildren-learning-icon-vector-29197040"></a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -29,11 +33,11 @@
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lorem Ipsum</h5>
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img id="logo" src="assets/img/svgs/logo.svg" alt="Forever Reader's Logo - Child reading a book"> Forever Readers</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                </div>
                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" role="list">
                      <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
                      </li>
@@ -47,10 +51,7 @@
                         <a class="nav-link" href="#news">News</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link btn myBtn" href="#">Donate</a>
+                        <button type="button" class="nav-link btn myBtn" href="#">Donate</button>
                      </li>
                   </ul>
                </div>
@@ -59,22 +60,25 @@
       </nav>
       </header>
       <!-- Hero -->
-      <section class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center hero my-container">
-         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1>Bacon ipsum dolor amet t-bone tongue ribeye </h1>
-            <p>Bacon ipsum dolor amet t-bone tongue ribeye salami capicola. 
-               Meatball pancetta kielbasa, sausage beef cow brisket ribeye frankfurter beef ribs spare ribs porchetta jowl. 
-               Pork belly pancetta leberkas flank drumstick ground round tri-tip, tail rump bacon kielbasa buffalo doner. 
-            </p>
-            <button type="button" class="btn myBtn">Donate Now</button>
+      <section class="hero-section position-relative" id="hero" aria-labelledby="hero">
+         <video src="assets/video/hero-video.mp4#t=3" autoplay loop muted playsinline></video>
+         <img src="assets/img/hero-mobile-img.jpg" alt="Boy reading book">
+         <div class="overlay position-absolute d-flex align-items-center font-weight-bold text-white mb-0">
+           <blockquote class="p-4 mx-5 col-lg-4 blockquote-lg" aria-label="hero-heading" role="contentinfo">
+             <h1>Summer Reading</h1>
+             <p>Bacon ipsum dolor amet fatback jowl corned beef, leberkas chislic strip steak sirloin shank ribeye. Alcatra filet mignon pork chop.</p>
+             <button class="btn myBtn">Donate Now</button>
+           </blockquote>
          </div>
-         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden hero-img">
-            <img class="rounded-lg-3"src="assets/img/hero-img.jpg" alt="Kid playing" width="720">
-         </div>
-      </section>
+         <div class="hero-divider" id="startchange">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 119" preserveAspectRatio="none" role="none">
+                <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+            </svg>
+        </div>
+       </section>
       <!-- About -->
-      <section class="about my-container" id="about">
-         <div class="row ">
+      <section class="about my-container" id="about" aria-labelledby="about">
+         <div class="row">
             <div class="col-md-5">
                <h2>About Us</h2>
                <p>
@@ -90,27 +94,33 @@
                   Alcatra filet mignon pork chop, ham hock shankle ground round pastrami beef corned beef pancetta hamburger. 
                </p>
                <button type="button" class="btn myBtn">Learn more</button>
+               <div class="book-stack">
+                  <picture>
+                     <source media="(min-width:37.5em)" srcset="assets/img/svgs/book-stack.svg">
+                     <img src="assets/img/svgs/book-stack-mobile.svg" alt="Stack of books" style="width:auto;">
+                   </picture>
+              </div>
             </div>
             <div class="col-md-7">
                <div class="row justify-content-end">
                   <div class="col-md-6 svg-container">
-                     <img class="svg" src="assets/img/svgs/book-svg.svg">
-                     <h3>Book</h3>
+                     <img class="svg" src="assets/img/svgs/book-svg.svg" alt="Doodle of person reading book">
+                     <h3>Reading</h3>
                      <p>Bacon ipsum dolor amet fatback jowl corned beef</p>
                   </div>
                   <div class="col-md-6 svg-container">
-                     <img class="svg" src="assets/img/svgs/bike-svg.svg">
-                     <h3>Bike</h3>
+                     <img class="svg" src="assets/img/svgs/bike-svg.svg" alt="Doodle of person riding a bike">
+                     <h3>Exercise</h3>
                      <p>Bacon ipsum dolor amet fatback jowl corned beef</p>
                   </div>
                   <div class="col-md-6 svg-container">
-                     <img class="svg" src="assets/img/svgs/draw-svg.svg">
-                     <h3>Draw</h3>
+                     <img class="svg draw" src="assets/img/svgs/draw-svg.svg" alt="Doodle of artist">
+                     <h3>Creativity</h3>
                      <p>Bacon ipsum dolor amet fatback jowl corned beef</p>
                   </div>
-                  <div class="col-md-6 svg-container">
-                     <img class="svg" src="assets/img/svgs/play-svg.svg">
-                     <h3>Play</h3>
+                  <div class="col-md-6 svg-container last-svg">
+                     <img class="svg" src="assets/img/svgs/audio-svg.svg" alt="Doodle of person listening to audio">
+                     <h3>Audiobooks</h3>
                      <p>Bacon ipsum dolor amet fatback jowl corned beef</p>
                   </div>
                </div>
@@ -118,7 +128,7 @@
          </div>
       </section>
       <!-- Programs -->
-      <section class="programs my-container" id="programs">
+      <section class="programs my-container position-relative" id="programs" aria-labelledby="programs">
          <header>
             <h2>Our Programs</h2>
          </header>
@@ -131,7 +141,7 @@
                      <p class="card-text">Hamburger beef biltong short loin porchetta. Short loin rump cupim pork belly pork chop pastrami, 
                         meatloaf fatback shoulder. Kevin pork belly jowl landjaeger andouille turducken sirloin doner tenderloin bacon.
                      </p>
-                     <a href="#" class="btn myBtn">Learn more</a>
+                     <button href="#" class="btn myBtn">Learn more</button>
                   </div>
                </div>
             </div>
@@ -143,7 +153,7 @@
                      <p class="card-text">Hamburger beef biltong short loin porchetta. Short loin rump cupim pork belly pork chop pastrami, 
                         meatloaf fatback shoulder. Kevin pork belly jowl landjaeger andouille turducken sirloin doner tenderloin bacon.
                      </p>
-                     <a href="#" class="btn myBtn">Learn more</a>
+                     <button href="#" class="btn myBtn">Learn more</button>
                   </div>
                </div>
             </div>
@@ -157,7 +167,7 @@
                      <p class="card-text">Hamburger beef biltong short loin porchetta. Short loin rump cupim pork belly pork chop pastrami, 
                         meatloaf fatback shoulder. Kevin pork belly jowl landjaeger andouille turducken sirloin doner tenderloin bacon.
                      </p>
-                     <a href="#" class="btn myBtn">Learn more</a>
+                     <button href="#" class="btn myBtn">Learn more</button>
                   </div>
                </div>
             </div>
@@ -169,7 +179,7 @@
                      <p class="card-text">Hamburger beef biltong short loin porchetta. Short loin rump cupim pork belly pork chop pastrami, 
                         meatloaf fatback shoulder. Kevin pork belly jowl landjaeger andouille turducken sirloin doner tenderloin bacon.
                      </p>
-                     <a href="#" class="btn myBtn">Learn more</a>
+                     <button href="#" class="btn myBtn">Learn more</button>
                   </div>
                </div>
             </div>
@@ -181,21 +191,25 @@
                      <p class="card-text">Hamburger beef biltong short loin porchetta. Short loin rump cupim pork belly pork chop pastrami, 
                         meatloaf fatback shoulder. Kevin pork belly jowl landjaeger andouille turducken sirloin doner tenderloin bacon.
                      </p>
-                     <a href="#" class="btn myBtn">Learn more</a>
+                     <button href="#" class="btn myBtn">Learn more</button>
                   </div>
                </div>
             </div>
          </div>
+         <div class="programs-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 119" preserveAspectRatio="none" role="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
       </section>
       <!-- Campaigns -->
-      <section class="campaigns my-container" id="campaigns">
+      <section class="campaigns my-container position-relative" id="campaigns" aria-labelledby="campaigns">
          <header>
             <h2>Featured Campaign</h2>
-            <p>Bacon ipsum dolor amet fatback jowl corned beef</p>
          </header>
          <div class="row gx-1 campaign-content">
             <div class="col-md-6">
-               <img id="campaign-img" src="assets/img/campaign-img.jpg" style="border-radius: 0 40px;">
+               <img id="campaign-img" src="assets/img/campaign-img.jpg" alt="Girl reading book" style="border-radius: 0 40px;">
             </div>
             <div class="col-md-6 campaign-stats">
                <div class="row gx-1">
@@ -211,16 +225,21 @@
                      </ul>
                   </div>
                   <div class="col-md-9">
-                     <h3>Bacon ipsum dolor amet fatback</h3>
+                     <h3>Read Across America</h3>
                      <p>Alcatra filet mignon pork chop, ham hock shankle ground round pastrami beef corned beef pancetta hamburger.</p>
                      <button type="button" class="btn myBtn">Donate Now</button>
                   </div>
                </div>
             </div>
          </div>
+         <div class="campaigns-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none" role="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
+        </div>
       </section>
       <!-- Latest News -->
-      <section class="news my-container" id="news">
+      <section class="news my-container position-relative" id="news" aria-labelledby="news">
          <header>
             <h2>Latest News</h2>
          </header>
@@ -230,14 +249,14 @@
                   <img src="assets/img/news-img-1.jpg" class="card-img-top" alt="Milk and Honey Book">
                   <div class="card-body">
                      <p>July 8, 2022</p>
-                     <h3 class="card-title">Car Seats</h3>
+                     <h3 class="card-title">Burgdoggen Picanha</h3>
                      <p class="card-text">Pork chop ham corned beef, beef chicken salami chislic shoulder. 
                         Tri-tip buffalo burgdoggen picanha turducken ham hock brisket shankle bacon pastrami. Alcatra venison drumstick andouille.  [...].
                      </p>
                      <hr>
                      <div class="card-bottom">
-                        <span><i class="bi bi-person-circle"></i> Tony Stark</span>
-                        <span><i class="bi bi-chat"></i> 3 comments</span>
+                        <span><i class="bi bi-person-circle" role="none"></i> Tony Stark</span>
+                        <span><i class="bi bi-chat" role="none"></i> 3 comments</span>
                      </div>
                   </div>
                </div>
@@ -247,103 +266,77 @@
                   <img src="assets/img/news-img-2.jpg" class="card-img-top" alt="Books building blocks and apple">
                   <div class="card-body">
                      <p>June 18, 2022</p>
-                     <h3 class="card-title">Medicine</h3>
+                     <h3 class="card-title">Tri-tip Buffalo</h3>
                      <p class="card-text">Pork chop ham corned beef, beef chicken salami chislic shoulder. 
                         Tri-tip buffalo burgdoggen picanha turducken ham hock brisket shankle bacon pastrami. Alcatra venison drumstick andouille. [...].
                      </p>
                      <hr>
                      <div class="card-bottom">
-                        <span><i class="bi bi-person-circle"></i> Peter Parker</span>
-                        <span><i class="bi bi-chat"></i> 9 comments</span>
+                        <span><i class="bi bi-person-circle" role="none"></i> Peter Parker</span>
+                        <span><i class="bi bi-chat" role="none"></i> 9 comments</span>
                      </div>
                   </div>
                </div>
             </div>
             <div class="col-md-4">
-               <div class="card">
+               <div class="card last-card">
                   <img src="assets/img/news-img-3.jpg" class="card-img-top" alt="A Book Full of Hope book">
                   <div class="card-body">
                      <p>May 16, 2022</p>
-                     <h3 class="card-title">Sports</h3>
+                     <h3 class="card-title">Shankle Bacon Pastrami</h3>
                      <p class="card-text">Pork chop ham corned beef, beef chicken salami chislic shoulder. 
                         Tri-tip buffalo burgdoggen picanha turducken ham hock brisket shankle bacon pastrami. Alcatra venison drumstick andouille.  [...].
                      </p>
                      <hr>
                      <div class="card-bottom">
-                        <span><i class="bi bi-person-circle"></i> Kurt Wagner</span>
-                        <span><i class="bi bi-chat"></i> 12 comments</span>
+                        <span><i class="bi bi-person-circle" role="none"></i> Kurt Wagner</span>
+                        <span><i class="bi bi-chat" role="none"></i> 12 comments</span>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </section>
-      <!-- Contact -->
-      <section class="mb-4 contact my-container" id="contact">
-         <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-         <p class="text-center w-responsive mx-auto mb-5">
-          Porchetta tail ham hock flank, beef cow shankle tongue. 
-         </p>
-         <div class="row mx-auto">
-            <div class="col-md-12 mb-md-0 mb-5">
-               <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                  <div class="row">
-                     <div class="col-md-6">
-                        <div class="md-form mb-0">
-                           <input type="text" id="name" name="name" class="form-control">
-                           <label for="name" class="">Your name</label>
-                        </div>
-                     </div>
-                     <div class="col-md-6">
-                        <div class="md-form mb-0">
-                           <input type="text" id="email" name="email" class="form-control">
-                           <label for="email" class="">Your email</label>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-12">
-                        <div class="md-form mb-0">
-                           <input type="text" id="subject" name="subject" class="form-control">
-                           <label for="subject" class="">Subject</label>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-md-12">
-                        <div class="md-form">
-                           <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                           <label for="message">Your message</label>
-                        </div>
-                     </div>
-                  </div>
-               </form>
-               <div class="text-center text-md-left">
-                  <a class="btn myBtn" onclick="document.getElementById('contact-form').submit();">Send</a>
-               </div>
-               <div class="status"></div>
-            </div>
-         </div>
+         <div class="news-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 119" preserveAspectRatio="none" role="none">
+                <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+            </svg>
+        </div>
       </section>
       <!-- Footer -->
-      <footer class="py-3">
-         <ul class="nav justify-content-center">
+      <footer class="py-3" id="footer">
+         <div class="container">
+            <div class="row">
+            <div class="col-sm-6 d-flex mx-auto">
+               <div class="single py-4">
+                  <h2 class="py-4">Subscribe to our Newsletter</h2>
+               <div class="input-group">
+                     <input type="email" class="form-control" placeholder="Enter your email" aria-label="email">
+                     <span class="input-group-btn">
+                     <button class="btn" type="submit">Subscribe</button>
+                     </span>
+                      </div>
+               </div>
+            </div>
+            </div>
+            </div>
+         <ul class="nav justify-content-center" role="list">
             <li class="nav-item"><a href="#about">About Us</a></li>
             <li class="nav-item"><a href="#programs">Our Programs</a></li>
             <li class="nav-item"><a href="#campaigns">Campaigns</a></li>
             <li class="nav-item"><a href="#news">News</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
             <li class="nav-item"><a href="#">Donate</a></li>
          </ul>
-         <ul class="nav justify-content-center">
-            <li class="ms-3"><a href="#"><i class="bi bi-twitter"></i></a></li>
-            <li class="ms-3"><a href="#"><i class="bi bi-instagram"></i></li>
-            <li class="ms-3"><a href="#"><i class="bi bi-facebook"></i></li>
+         <ul class="nav justify-content-center" role="list">
+            <li class="ms-3"><a role="button" aria-label="Twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a role="button" aria-label="Instagram" href="#"><i class="bi bi-instagram"></i></li>
+            <li class="ms-3"><a role="button" aria-label="Facebook" href="#"><i class="bi bi-facebook"></i></li>
          </ul>
-         <p class="text-center">© 2022 Lorem Ipsum</p>
+         <p class="text-center">Forever Readers © 2022</p>
       </footer>
-      <script src="assets/js/app.js"></script>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
       <script src="assets/bootstrap/js/bootstrap.js"></script>
+      <script src="assets/js/app.js"></script>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

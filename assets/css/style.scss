@@ -26,6 +26,9 @@ h3 {
     margin: 1rem 0;
     text-transform: uppercase;
 }
+h4 {
+    font-size: 1rem;
+}
 a {
     text-decoration: none !important;
 }
@@ -35,10 +38,13 @@ a {
     font-weight: 600;
     border: none;
 }
-.myBtn:hover {
-    background-color: var(--hover-color);
+.myBtn:hover, .myBtn:focus {
+    background-color: var(--btn-hover-color);
     color: white !important;
     transform: scale(1.05) translateY(-.125em);
+}
+.myBtn:focus {
+    border: 3px solid var(--secondary-color);
 }
 
 .my-container {
@@ -55,16 +61,11 @@ a {
 
 
 
-
-
-
-
 @import "./navbar";
 @import "./hero";
 @import "./about";
 @import "./programs";
 @import "./campaigns";
 @import "./news";
-@import "./contact";
 @import "./footer";
 @import "./media";

@@ -1,24 +1,60 @@
-footer {
-    background-color: var(--bg-color) !important;
+#footer {
+    background-color: var(--dark-color) !important;
     box-shadow: var(--box-shadow) !important;
     .nav-item {
         padding: 1rem;
     }
-    .ms-3 {
-        padding: .5rem;
-    }
     a {
-        color: var(--font-color);
+        color: var(--link-color);
         font-weight: 600;
+        &:focus {
+            border: 3px solid var(--secondary-color);
+        }
     }
     a:hover {
-        color: var(--secondary-color);
+        color: var(--hover-color);
     }
     p {
-        color: var(--font-color);
         margin-top: 1rem;
     }
     p:hover {
         cursor: default;
     }
 }
+#footer h2 {
+    color: var(--font-color-light);
+}
+
+#footer .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2; 
+}
+
+    #footer .single .form-control {
+    height: 50px;
+    background-color: var(--bg-color);
+    border-radius: 16px 0 0 16px; 
+}
+
+    #footer .single .form-control:focus {
+    box-shadow: none;
+    border: 3px solid var(--secondary-color); 
+}
+    #footer .btn {
+    height: 50px; 
+    border-radius: 0 16px 16px 0;
+    color: var(--font-color-light);
+    background-color: var(--primary-color);
+    font-weight: 600;
+
+    &:hover {
+        background-color: var(--btn-hover-color);
+        border-color: var(--btn-hover-color);
+    }
+    &:focus {
+        border: 3px solid var(--secondary-color);
+    }
+    }

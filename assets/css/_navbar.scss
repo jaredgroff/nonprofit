@@ -1,9 +1,21 @@
+.screenreader-text {
+    height: 1px;
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
 #my-navbar {
     min-height: 10vh;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: var(--bg-color) !important;
-    box-shadow: var(--bottom-box-shadow);
+    background-color: none !important;
+/*     background-color: var(--overlay2); */
+/*     box-shadow: var(--bottom-box-shadow); */
+.myBtn {
+    color: #f1f1f1;
+}
 }
 
 .navbar-brand {
@@ -15,18 +27,31 @@
 
 #logo {
     max-width: 50px;
-}
-#logo:hover {
-    content: url('../img/svgs/logo-hover.svg');
+    filter: drop-shadow(0 0 20px #121212);
 }
 #my-navbar a {
+    color: var(--link-color);
     font-weight: 600;
     margin: 0 1rem;
 }
 
 #my-navbar a:hover {
-    color: var(--secondary-color);
+    color: var(--hover-color);
+}
+
+#my-navbar a:focus {
+    border: 3px solid var(--secondary-color);
+}
+.offcanvas {
+    background-color: #2a261f;
+    h5 {
+        color: var(--font-color-light);
+    }
 }
 .offcanvas.offcanvas-end {
     padding: 1rem;
+}
+
+.btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 }

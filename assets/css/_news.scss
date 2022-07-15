@@ -1,4 +1,32 @@
+.news {
+    background-color: var(--canvas-color);
+}
 .card-bottom {
     display: flex;
     justify-content: space-between;
+}
+.last-card {
+    margin-bottom: 5rem;
+}
+
+.news-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.news-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 70px;
+    margin-bottom: -1px;
+}
+
+.news-divider .shape-fill {
+    fill: var(--dark-color);
 }

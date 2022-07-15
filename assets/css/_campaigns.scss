@@ -1,8 +1,15 @@
 .campaigns {
     background-color: var(--secondary-color);
-    background: linear-gradient(-45deg, #0e926b, #27dca6);
+/*     background: linear-gradient(-45deg, #0e926b, #27dca6); */
+h2 {
+    color: var(--font-color-light);
+}
     .col-md-6 {
         text-align: center;
+    }
+    hr {
+        width: 50px;
+        margin: .5rem auto;
     }
 }
 #campaign-img {
@@ -12,6 +19,7 @@
 }
 .campaign-content {
     position: relative;
+    z-index: 1;
 }
 .campaign-stats {
     background-color:white;
@@ -19,6 +27,7 @@
     padding:2rem; 
     border-radius: 0 40px;
     box-shadow: var(--box-shadow);
+    z-index: 1;
     ul {
         margin-right: 1rem;
     }
@@ -36,4 +45,26 @@
 .campaign-stats li:nth-child(4) {
     font-weight: 600;
     font-size: 1.25rem;
+}
+
+.campaigns-divider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-bottom: -1px;
+}
+
+.campaigns-divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.campaigns-divider .shape-fill {
+    fill: var(--canvas-color);
 }
